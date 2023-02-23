@@ -19,3 +19,42 @@ body{
     text-decoration: none; 
     font-size: 14px;
 }
+
+
+/*    Presentacion  */
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #F5F5F5;
+}
+
+.presentacion__imagen{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+.presentacion__titulo{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.presentacion__formacion{
+    font-size: 14px;
+    font-weight: 300;/*--*/
+}
+
+.presentacion__lista{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.lista__link{
+    /*color: #464646;*/
+    font-size: 14px;
+    font-weight: 500;/*--*/
+}
