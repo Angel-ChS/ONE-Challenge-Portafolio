@@ -21,6 +21,7 @@ body{
 }
 
 
+
 /*    Presentacion  */
 
 .presentacion{
@@ -57,4 +58,24 @@ body{
     /*color: #464646;*/
     font-size: 14px;
     font-weight: 500;/*--*/
+}
+
+
+
+/*     Sobre mi     */
+
+.sobreMi{
+    padding: 1rem;
+    background: #EAF2FD;
+}
+/*El titulo ocupo las mismas caracteristicas que el titulo de presentacion
+ocuparon la clase presentacion__titulo*/
+.sobreMi__descripcion{
+    font-size: 14px;
+    font-weight: 300;
+}
+.sobreMi__firma{
+    width: 140px;
+    height: 52px; 
+    margin-top: 1rem; 
 }
