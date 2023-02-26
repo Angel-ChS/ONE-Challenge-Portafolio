@@ -204,6 +204,7 @@ ocuparon la clase presentacion__titulo*/
 
 
 /*    Formación academica     */
+
 .formacion{
     background: #EAF2FD;
     display: flex;
@@ -233,4 +234,53 @@ ocuparon la clase presentacion__titulo*/
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 1rem;
+}
+
+
+/*    Experiencia Profesional    */
+
+.experiencia{
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experiencia__container{
+    margin: 0 5rem;
+    width: calc(100% - 5rem);
+}
+.experiencia__imagen{
+    width: 296px;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+.experiencia__nombre{
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+.experiencia__descripcion{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.experiencia__listas{
+    display: flex;
+    
+}
+.experiencia__listas_li{
+    /**/
+    border-style: solid;
+    border-color: #2A7AE4;
+    border-width: 2px; 
+    width: 108px;
+    height: 40px;
+    margin-right: 2rem;
+}
+.experiencia__listas_link{
+    
+    
+    
+    font-size: 14px;
+    font-weight: 300;
 }
