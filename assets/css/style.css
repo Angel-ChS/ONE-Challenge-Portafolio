@@ -278,6 +278,7 @@ ocuparon la clase presentacion__titulo*/
     width: 108px;
     height: 40px;
     margin-right: 2rem;
+    margin-bottom: 2rem;
     justify-content: center;
     align-items: center; 
     color: #2A7AE4;
@@ -289,4 +290,56 @@ ocuparon la clase presentacion__titulo*/
 .experiencia__listas_link{
     font-size: 14px;
     font-weight: 500;
+}
+
+/*          Contacto               */
+
+.contacto{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background: #EAF2FD;
+}
+
+.contacto__parrafo{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/ 
+    width: calc(100% - 4rem);
+}
+.formulario__nombre{
+    height: 56px;
+    margin-bottom: 2rem;
+}
+.formulario__email{
+    height: 56px;
+    margin-bottom: 2rem;
+}
+.formulario__asunto{
+    height: 56px;
+    margin-bottom: 2rem;
+}
+.formulario__mensaje{
+    margin-bottom: 2rem; 
+}
+.formulario__boton{
+    border-style: solid;
+    border-color: #2A7AE4; 
+    background: #2A7AE4;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border-width: 2px; 
+    width: 133px;
+    font-size: 14px; 
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 2rem;
 }
