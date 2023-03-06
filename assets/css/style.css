@@ -270,17 +270,23 @@ ocuparon la clase presentacion__titulo*/
 }
 .experiencia__listas_li{
     /**/
+    display: flex;
     border-style: solid;
-    border-color: #2A7AE4;
+    border-color: #2A7AE4; 
+    border-radius: 5px;
     border-width: 2px; 
     width: 108px;
     height: 40px;
     margin-right: 2rem;
+    justify-content: center;
+    align-items: center; 
+    color: #2A7AE4;
+}
+.experiencia__lista_li--demo{
+    background: #2A7AE4;
+    color: #FFFFFF;
 }
 .experiencia__listas_link{
-    
-    
-    
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
 }
