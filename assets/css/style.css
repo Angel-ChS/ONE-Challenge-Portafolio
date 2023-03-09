@@ -314,10 +314,38 @@ ocuparon la clase presentacion__titulo*/
     /*align-items: center;*/ 
     width: calc(100% - 4rem);
 }
+
+
 .formulario__nombre{
     height: 56px;
     margin-bottom: 2rem;
 }
+.formulario__nombre:focus{
+    outline: none; 
+} 
+.formulario__nombre::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+
+.formilario__nombre--label{
+    position: absolute;
+    /*background: #FFFFFF;*/
+    top: 150rem;
+    /*bottom: 4.5rem;*/
+    left: 3rem;
+    
+    transition: all 0.25s;
+}
+
+.formulario__nombre:focus + .formilario__nombre--label, .formulario__nombre:not(:placeholder-shown) + .formilario__nombre--label{
+    top: 148.8rem;
+    color: blue;
+    font-size: 0.85rem;
+    transition: all 0.25s;
+}
+
+
 .formulario__email{
     height: 56px;
     margin-bottom: 2rem;
