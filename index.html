@@ -120,12 +120,25 @@
             </p>
             <form class="contacto__formulario" action="">
                 <div class="input__container">
-                    <input name="name" class="input__nombre" type="text" placeholder="Nombre" required>
-                    <label for="name" class="input__nombre--label">Nombre</label>
+                    <input name="name" class="input" type="text" placeholder="Nombre" required>
+                    <label for="name" class="input__label">Nombre</label>
+                    <!--<span>Este campo necesita ser completado</span>-->
                 </div>
-                <input class="formulario__email" type="text">
-                <input class="formulario__asunto" type="text">
-                <textarea class="formulario__mensaje" name="" id="" cols="30" rows="10"></textarea>
+                <div class="input__container">
+                    <input name="email" class="input" type="email" placeholder="Email" required>
+                    <label for="email" class="input__label">E-mail</label>
+                    <!--<span>Este campo necesita ser completado</span>-->
+                </div>
+                <div class="input__container">
+                    <input name="asunto" class="input" type="text" placeholder="Asunto" required>
+                    <label for="asunto" class="input__label">Asunto</label> 
+                    <!--<span>Este campo necesita ser completado</span>-->
+                </div>
+                <div class="textArea__container">
+                    <textarea class="textArea" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <label for="mensaje" class="input__label">Mensaje</label>
+
+                </div>
                 <a class="formulario__boton" href="">Enviar mensaje</a>
             </form>
         </section>

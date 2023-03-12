@@ -307,13 +307,14 @@ ocuparon la clase presentacion__titulo*/
     margin: 0 2rem;
     margin-bottom: 2rem;
 }
-
 .contacto__formulario{
     display: flex;
     flex-direction: column;
     width: calc(100% - 4rem);
 }
+
 .input__container{ 
+    position:relative; /*<-----*/
     display: flex;
     align-items: end;
     width: 100%;  
@@ -322,8 +323,8 @@ ocuparon la clase presentacion__titulo*/
     background: #FFF;
 
 }
-.input__nombre{   
-    position: relative;
+.input{   
+    /*position: relative;*/
     width: 100%;
     height: 30px;
     padding: 0 1rem 0 1rem; 
@@ -334,44 +335,73 @@ ocuparon la clase presentacion__titulo*/
     border-right: none;
     border-bottom-color: #C8C8C8;
 }
-.input__nombre:focus{
+.input:focus{
     outline: none; 
     border-bottom-color: #2A7AE4; 
 }
-.input__nombre:focus + .input__nombre--label{
+.input:focus + .input__label{
     color: #2A7AE4;
 } 
-.input__nombre::placeholder {
+.input::placeholder {
     visibility: hidden;
   }
 
-.input__nombre--label{
+.input__label{
     position: absolute;  
     font-size: 16px;
-    top: 150rem;
-    left: 3rem;
-    transition: all 0.25s;
+    top: 1.5rem;
+    left: 1rem;
     color: #A2A2A2;
+    transition: all 0.25s;
 }
 
-.input__nombre:focus + .input__nombre--label, .input__nombre:not(:placeholder-shown) + .input__nombre--label{
-    top: 149.4rem;
+    
+.input:focus + .input__label, .input:not(:placeholder-shown) + .input__label{
+    top: 0.5rem;
+    font-size: 0.85rem;
+    transition: all 0.25s;
+}
+
+.textArea__container{ 
+    position:relative; /*<-----*/
+    display: flex;
+    align-items: end;
+    width: 100%;  
+    height: 140px; 
+    margin-bottom: 2rem;  
+    background: #FFF;
+
+}
+.textArea{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100px;
+    padding: 0 1rem 0 1rem; 
+    font-size: 16px; 
+    color: #464646;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #C8C8C8;
+}
+.textArea:focus{
+    outline: none; 
+    border-bottom-color: #2A7AE4; 
+}
+.textArea:focus + .input__label{
+    color: #2A7AE4;
+} 
+.textArea::placeholder {
+    visibility: hidden;
+  }
+  .textArea:focus + .input__label, .textArea:not(:placeholder-shown) + .input__label{
+    top: 0.5rem;
     font-size: 0.85rem;
     transition: all 0.25s;
 }
 
 
-.formulario__email{
-    height: 56px;
-    margin-bottom: 2rem;
-}
-.formulario__asunto{
-    height: 56px;
-    margin-bottom: 2rem;
-}
-.formulario__mensaje{
-    margin-bottom: 2rem; 
-}
+
 .formulario__boton{
     border-style: solid;
     border-color: #2A7AE4; 
