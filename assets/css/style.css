@@ -45,9 +45,10 @@ body{
     font-weight: bold;
     margin: 1rem 0;
 }
-.presentacion__formacion{
+.presentacion__formacion{/*.presentacion_formacion */
     font-size: 14px;
-    font-weight: 300;/*--*/
+    font-weight: 300;/*--*/ 
+    margin-bottom: 1rem;
 }
 
 .presentacion__lista{
@@ -70,10 +71,10 @@ body{
 }
 /*El titulo ocupo las mismas caracteristicas que el titulo de presentacion
 ocuparon la clase presentacion__titulo*/
-.sobreMi__descripcion{ /*-------.presentacion_formacion*/
+/*.sobreMi__descripcion{ /*-------.presentacion_formacion
     font-size: 14px;
     font-weight: 300;
-}
+}*/
 .sobreMi__firma{ /*---------------Deberia der background*/
     width: 140px;
     height: 52px; 
@@ -84,19 +85,19 @@ ocuparon la clase presentacion__titulo*/
 
 /*     Skills     */
 
-.skills{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+.skillsHobbies{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
     background: #F5F5F5; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.skills__contenedor{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+.skillsHobbies__contenedor{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
     width: 100%;
 }
-.contenedor__div{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+.skillsHobbies__div{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
     display: flex;
     justify-content: end;
     flex-direction: column;
@@ -107,36 +108,43 @@ ocuparon la clase presentacion__titulo*/
     width: calc(40% - 1rem);
     height: 118px;
 }
-.contenedor__div--HTML{
-    background-image: url(../img/html.svg); /*<-------Podemos ver la mayoria de atributos son lo mismo, solo hacer una clase para la imagen mejor*/
+.skillsHobbies__caracteristicas{
     background-repeat: no-repeat;
     background-position: left;
     width: 28px;
-    height: 37px;
+    height: 37px; 
 }
-.contenedor__div--CSS{
+.skillsHobbies__caracteristicas--HTML{
+    background-image: url(../img/html.svg); /*<-------Podemos ver la mayoria de atributos son lo mismo, solo hacer una clase para la imagen mejor*/
+    /*background-repeat: no-repeat;
+    background-position: left;
+    width: 28px;
+    height: 37px;*/
+}
+.skillsHobbies__caracteristicas--CSS{
     background-image: url(../img/css.svg);/*<------------------------*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-position: center;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.contenedor__div--JavaScript{
+.skillsHobbies__caracteristicas--JavaScript{
     background-image: url(../img/javaScript.svg);/*<------------------------*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-position: center;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.contenedor__div--React{
+.skillsHobbies__caracteristicas--React{
     background-image: url(../img/react.svg);/*<------------------------*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-position: center;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.skills__nombre{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
-    margin-top: 1rem;
+.skillsHobbies__nombre{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
     font-size: 16px;
     font-weight: bold;
 }
@@ -145,19 +153,19 @@ ocuparon la clase presentacion__titulo*/
 
 /*    Hobbies    */
 
-.hobbies{ /*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+/*.hobbies{ /*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos
     background: #F5F5F5; 
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.hobbies__contenedor{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+}*/
+/*.hobbies__contenedor{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
     width: 100%;
-}
-.hobbies__div{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+}*/
+/*.hobbies__div{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos
     display: flex;
     justify-content: end;
     flex-direction: column;
@@ -167,40 +175,40 @@ ocuparon la clase presentacion__titulo*/
     padding: 1rem;
     width: calc(40% - 1rem);
     height: 118px;
-}
-.hobbies__div--Musica{
+}*/
+.skillsHobbies__caracteristicas--Musica{
     background-image: url(../img/oirMusica.svg);/*<-------Podemos ver la mayoria de atributos son lo mismo, solo hacer una clase para la imagen mejor*/
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-repeat: no-repeat;
+    background-position: left;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.hobbies__div--Cocinar{
+.skillsHobbies__caracteristicas--Cocinar{
     background-image: url(../img/cocinar.svg);/*<------------------------*/
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-repeat: no-repeat;
+    background-position: left;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.hobbies__div--Viajar{
+.skillsHobbies__caracteristicas--Viajar{
     background-image: url(../img/viajar.svg);/*<------------------------*/
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-repeat: no-repeat;
+    background-position: left;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.hobbies__div--Juegos{
+.skillsHobbies__caracteristicas--Juegos{
     background-image: url(../img/videojuegos.svg);/*<------------------------*/
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-repeat: no-repeat;
+    background-position: left;
     width: 28px;
-    height: 37px;
+    height: 37px;*/
 }
-.hobbies__nombre{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos*/
+/*.hobbies__nombre{/*Estas propiedades son las mismas para skills y hobbies, hay que hacer una clase para ambos
     margin-top: 1rem;
     font-size: 16px;
     font-weight: bold;
-}
+}*/
 
 
 
@@ -226,16 +234,16 @@ ocuparon la clase presentacion__titulo*/
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
-.formacion__nombre{ /*<------Este es muy parecido a los de skills y hobbies_nombre*/
+/*.formacion__nombre{ /*<------Este es muy parecido a los de skills y hobbies_nombre
     margin-bottom: 1rem;
     font-size: 16px;
     font-weight: bold;
-}
-.formacion__fecha{/*<---------Esta se parece a .presentacion_formacion*/
+}*/
+/*.formacion__fecha{/*<---------Esta se parece a .presentacion_formacion
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 1rem;
-}
+}*/
 
 
 
@@ -261,11 +269,11 @@ ocuparon la clase presentacion__titulo*/
     font-size: 16px;
     font-weight: bold;
 }
-.experiencia__descripcion{/*<---------Esta se parece a .presentacion_formacion*/
+/*.experiencia__descripcion{/*<---------Esta se parece a .presentacion_formacion
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 1rem;
-}
+}*/
 .experiencia__listas{
     display: flex;
     
