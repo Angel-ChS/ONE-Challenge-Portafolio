@@ -382,5 +382,16 @@ footer p{
         width: calc(27% - 1rem);
         margin: 1rem;
     }
+
+    /*   Experiencia profesional    */
+    .experiencia__imagen{
+        width: 100%;
+        height: 600px;
+    }
+
+    /*   Contacto parrafo     */
+    .contacto__parrafo{
+        width: calc(100% - 4rem);
+    }
 }
     
