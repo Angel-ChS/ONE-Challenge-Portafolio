@@ -355,6 +355,7 @@ footer p{
 /*    Media Query de tablet    */
 
 @media screen and (min-width: 768px){
+    /*     Presentacion    */
     .presentacion{
         flex-wrap: wrap; 
         height: 140px;
@@ -373,6 +374,13 @@ footer p{
         margin-right: 2rem;
         margin-bottom: 1rem; 
     }
-
+    /* Skills y hobbies */
+    .skillsHobbies__contenedor{
+        justify-content: start;
+    }
+    .skillsHobbies__div{
+        width: calc(27% - 1rem);
+        margin: 1rem;
+    }
 }
     
