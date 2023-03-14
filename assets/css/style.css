@@ -350,3 +350,29 @@ footer p{
     font-weight: 500; 
     color: #464646;
 }
+
+
+/*    Media Query de tablet    */
+
+@media screen and (min-width: 768px){
+    .presentacion{
+        flex-wrap: wrap; 
+        height: 140px;
+    }
+    .presentacion__imagen{
+        order: 5;
+        width: 146px;
+        height: 146px;
+    }
+    .presentacion_div{
+        width: calc(100% - 146px);
+        box-sizing: border-box; 
+        padding-right: 1.5rem;
+    }
+    .presentacion__lista{
+        margin-right: 2rem;
+        margin-bottom: 1rem; 
+    }
+
+}
+    
