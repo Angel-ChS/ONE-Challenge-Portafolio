@@ -19,6 +19,9 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
+.cabecera__lista--link{
+    display: none;
+}
 .lista__email{
     text-decoration: none; 
     font-size: 14px;
@@ -355,6 +358,12 @@ footer p{
 /*    Media Query de tablet    */
 
 @media screen and (min-width: 768px){
+
+    /*      cabecera       */
+    .lista__email{
+        font-weight: bold;
+    }
+
     /*     Presentacion    */
     .presentacion{
         flex-wrap: wrap; 
@@ -392,6 +401,45 @@ footer p{
     /*   Contacto parrafo     */
     .contacto__parrafo{
         width: calc(100% - 4rem);
+    }
+}
+
+/*     Media Query para laptop    */
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .cabecera_menu{
+        width: 60%;
+    }
+    .cabecera_ul{
+        display: flex; 
+        justify-content: space-around;
+    }
+    .cabecera__lista--link{
+        display: block;
+    }
+
+    /*          Presentacion            */
+    .presentacion{
+        flex-wrap: wrap; 
+        height: 368px; 
+        padding: 6rem;
+    }
+    .presentacion__imagen{
+        order: 5;
+        width: 368px;
+        height: 368px;
+    }
+    .presentacion_div{
+        width: calc(100% - 368px);
+        box-sizing: border-box; 
+        padding-right: 1.5rem;
+    }
+    .presentacion__titulo{
+        font-size: 52px;
+        margin: 1rem 0;
+    }
+    .presentacion__formacion{
+        font-size: 22px;
+        margin-bottom: 1rem;
     }
 }
     
