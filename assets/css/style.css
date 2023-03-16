@@ -460,5 +460,16 @@ footer p{
         font-size: 16px;
         width: 800px;
     }
+
+
+    /*    skills  */
+    .skillsHobbies__contenedor{
+    justify-content: center; 
+    margin-bottom: 3rem;
+    }
+    .skillsHobbies__div{
+    width: 176px;
+    height: 174px;
+    }
 }
     
