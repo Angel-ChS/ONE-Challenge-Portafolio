@@ -406,6 +406,8 @@ footer p{
 
 /*     Media Query para laptop    */
 @media screen and (min-width: 1024px) and (max-width: 1440px){
+
+    /*         Cabecera                  */
     .cabecera_menu{
         width: 60%;
     }
@@ -431,7 +433,7 @@ footer p{
     .presentacion_div{
         width: calc(100% - 368px);
         box-sizing: border-box; 
-        padding-right: 1.5rem;
+        padding-right: 3rem;
     }
     .presentacion__titulo{
         font-size: 52px;
@@ -440,6 +442,23 @@ footer p{
     .presentacion__formacion{
         font-size: 22px;
         margin-bottom: 1rem;
+    }
+    .presentacion__lista{
+        margin-top: 2rem;
+        padding: 0 20rem 0 0;
+    }
+    .lista__link{
+        font-size: 16px;
+    }
+
+
+    /*        Sobre mi          */
+    .sobreMi{
+        padding-left: 5rem;
+    }
+    .sobremi__parrafo{
+        font-size: 16px;
+        width: 800px;
     }
 }
     
