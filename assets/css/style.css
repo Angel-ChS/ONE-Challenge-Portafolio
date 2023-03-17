@@ -225,6 +225,13 @@ body{
     align-items: center;
     background: #EAF2FD;
 }
+.contacto__img{
+    display: none;
+    background-image: url(./../img/contacto__img.png);
+    width: 464px;
+    height: 593px;
+
+}
 .contacto_titulo{ 
     padding-left: 2rem;
     align-self: flex-start;
@@ -456,6 +463,9 @@ footer p{
     .sobreMi{
         padding-left: 5rem;
     }
+    .titulo__otro--tamaño{
+        font-size: 32px;
+    }
     .sobremi__parrafo{
         font-size: 16px;
         width: 800px;
@@ -506,6 +516,22 @@ footer p{
         width: 752px;
         height: 406px; 
         margin-right: 2rem;
+    }
+
+
+
+    /*        Contacto      */
+
+    .contacto{
+        flex-direction: row;
+    }
+    .contacto__img{
+        display: block;
+        margin-left: 6rem;
+    
+    }
+    .contacto__formulario{
+        margin-left: 2rem;
     }
 }
     
