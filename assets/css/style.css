@@ -462,7 +462,7 @@ footer p{
     }
 
 
-    /*    skills  */
+    /*    skills y hobbies  */
     .skillsHobbies__contenedor{
     justify-content: center; 
     margin-bottom: 3rem;
@@ -470,6 +470,42 @@ footer p{
     .skillsHobbies__div{
     width: 176px;
     height: 174px;
+    }
+
+
+
+    /*       Formacion        */
+
+    .formacion__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formacion__logo{
+        width: 368px;
+        height: 286px;
+    }
+    .formacion_div{
+        margin-right: 11%;
+        margin-bottom: 2rem;
+    }
+    .formacion_div--nombre{
+        font-size: 22px;
+    }
+
+
+    /*    Experiencia profesional     */
+    .experiencia__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        margin: 2rem 12rem;
+        width: calc(100% - 12rem);
+    }
+    .experiencia__imagen{
+        width: 752px;
+        height: 406px; 
+        margin-right: 2rem;
     }
 }
     
