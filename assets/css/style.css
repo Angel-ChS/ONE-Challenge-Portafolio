@@ -294,6 +294,27 @@ body{
     font-size: 0.85rem;
     transition: all 0.25s;
 }
+.input__container--Error {
+    margin-bottom: 0.5rem;
+}
+  
+.input__container--Error .input {
+    border: 1px solid red;
+    border-radius: 7px;
+}
+  
+.input__container--Error .input__label {
+    color: red;
+}
+.input__mensaje--Error{
+    display: none;
+}
+.input__container--Error .input__mensaje--Error{
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
 .textArea__container{ 
     position:relative;
     display: flex;
