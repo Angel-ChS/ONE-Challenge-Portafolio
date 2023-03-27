@@ -1,7 +1,7 @@
 export function validaciones(input){
 
     const tipoDeAtributo = input.dataset.tipo; 
-
+    
     if(input.validity.valid){
         input.parentElement.classList.remove("input__container--Error"); 
         input.parentElement.querySelector(".input__mensaje--Error").innerHTML = "";
@@ -31,8 +31,8 @@ const mensajesDeError = {
         patternMismatch: "Debe de tener de 5 a 50 caracteres"
     },
     mensaje: {
-        valueMissing: "El campo mensaje no puede estar vacio",
-        patternMismatch: "Debe de tener de 5 a 300 caracteres"
+        valueMissing: "El campo mensaje no puede estar vacio"
+        //patternMismatch: "Debe de tener de 5 a 300 caracteres"//El textArea no permite pattern
     }
 }
 

@@ -121,7 +121,7 @@
 
         <section class="contacto">
             <div class="contacto__img"></div>
-            <div>
+            <div class="div_contacto">
 
                 <h2 class="presentacion__titulo contacto_titulo titulo__otro--tamaño">Contacto</h2>
                 <p class="contacto__parrafo">
@@ -132,22 +132,22 @@
                 </p>
                 <form class="contacto__formulario" action="">
                     <div class="input__container">
-                        <input name="name" class="input" type="text" placeholder="Nombre" required  pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*[0-9])(?!.*[!@#$%^&*_=+-]).{5,50}$" data-tipo="nombre">
+                        <input id="input" name="name" class="input" type="text" placeholder="Nombre" required  pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*[0-9])(?!.*[!@#$%^&*_=+-]).{5,50}$" data-tipo="nombre">
                         <label for="name" class="input__label">Nombre</label>
                         <span class="input__mensaje--Error"></span>
                     </div>
                     <div class="input__container">
-                        <input name="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                        <input id="input" name="email" class="input" type="email" placeholder="Email" required data-tipo="email">
                         <label for="email" class="input__label">E-mail</label>
                         <span class="input__mensaje--Error"></span>
                     </div>
                     <div class="input__container">
-                        <input name="asunto" class="input" type="text" placeholder="Asunto" required pattern="^[\s\S]{5,50}$" data-tipo="asunto">
+                        <input id="input" name="asunto" class="input" type="text" placeholder="Asunto" required pattern="^[\s\S]{5,50}$" data-tipo="asunto">
                         <label for="asunto" class="input__label">Asunto</label> 
                         <span class="input__mensaje--Error"></span>
                     </div>
                     <div class="textArea__container">
-                        <textarea class="textArea" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required pattern="^[\s\S]{5,300}$" data-tipo="mensaje"></textarea>
+                        <textarea id="input" class="textArea" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
                         <label for="mensaje" class="input__label">Mensaje</label>
                         <span class="input__mensaje--Error"></span>
     
