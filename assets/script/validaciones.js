@@ -40,9 +40,9 @@ function mostrarMensajeDeError(tipoDeAtributo,input){//aquí recibe el data-atri
     let mensaje 
     tipoDeErrores.forEach( error =>{ //Con el forEach recorremos la lista tipoDeErrores siendo error la variable que hace el recorrido
         if(input.validity[error]){//Aquí vemos que con error vemos que con el parametro input recorremos los tipo de errores que puede contener 
-            console.log(tipoDeAtributo, error);
-            console.log(input.validity[error]);
-            console.log(mensajesDeError[tipoDeAtributo][error]);
+            //console.log(tipoDeAtributo, error);
+            //console.log(input.validity[error]);
+            //console.log(mensajesDeError[tipoDeAtributo][error]);
             mensaje = mensajesDeError[tipoDeAtributo][error];//Si la valor que tiene la variable error que trae de tipoDeErrores es correcta al tipo de error que presenta el input con .validity, pues lo que hacemos es que recorremos el objeto mensajesDeError dependiendo el parametro del data-atribute dado y dependiendo su error y si estos coinciden y existe pues se guardan en la variable mensaje 
         }
     })
